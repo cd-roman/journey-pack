@@ -5,7 +5,6 @@ export default function Button({ onClick, buttonType, children }) {
       className={`btn ${buttonType === "secondary" ? "btn--secondary" : ""}`}
     >
       {children}
-      Button
     </button>
   );
 }
