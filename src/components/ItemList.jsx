@@ -76,6 +76,7 @@ function Item({ item, onDeleteItem, onToggleItem }) {
           onChange={() => onToggleItem(item.id)}
           checked={item.packed}
           type="checkbox"
+          name={item.name}
         />{" "}
         {item.name}
       </label>

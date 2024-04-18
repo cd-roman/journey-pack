@@ -39,7 +39,7 @@ export const useItemsStore = create(
       resetToInitial: () => {
         set(() => ({ items: initialItems }));
       },
-      markAllAsComplete: () => {
+      markAllAsPacked: () => {
         set((state) => {
           const newItems = state.items.map((item) => {
             return { ...item, packed: true };
@@ -48,7 +48,7 @@ export const useItemsStore = create(
           return { items: newItems };
         });
       },
-      markAllAsIncomplete: () => {
+      markAllAsUnpacked: () => {
         set((state) => {
           const newItems = state.items.map((item) => {
             return { ...item, packed: false };

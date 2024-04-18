@@ -2,21 +2,19 @@ import { useItemsStore } from "../stores/itemsStore";
 import Button from "./Button";
 
 export default function ButtonGroup() {
-  const markAllAsComplete = useItemsStore((state) => state.markAllAsComplete);
-  const markAllAsIncomplete = useItemsStore(
-    (state) => state.markAllAsIncomplete
-  );
+  const markAllAsPacked = useItemsStore((state) => state.markAllAsPacked);
+  const markAllAsUnpacked = useItemsStore((state) => state.markAllAsUnpacked);
   const resetToInitial = useItemsStore((state) => state.resetToInitial);
   const removeAllItems = useItemsStore((state) => state.removeAllItems);
 
   const secondaryButtons = [
     {
-      text: "Mark all as complete",
-      onClick: markAllAsComplete,
+      text: "Mark all as packed",
+      onClick: markAllAsPacked,
     },
     {
-      text: "Mark all as incomplete",
-      onClick: markAllAsIncomplete,
+      text: "Mark all as unpacked",
+      onClick: markAllAsUnpacked,
     },
     {
       text: "Reset to initial",
