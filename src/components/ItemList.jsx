@@ -1,3 +1,11 @@
+import EmptyView from "./EmptyView";
+
 export default function ItemList() {
-  return <div>ItemList</div>;
+  return (
+    <>
+      <ul className="item-list">
+        <EmptyView />
+      </ul>
+    </>
+  );
 }
