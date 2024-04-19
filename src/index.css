@@ -42,7 +42,6 @@ main {
   width: 80%;
   max-width: 980px;
   height: 80%;
-  min-height: 636px;
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -223,6 +222,10 @@ h2 {
   font-weight: 500;
 }
 
+.add-item-form {
+  margin-bottom: 160px;
+}
+
 form > input {
   height: 45px;
   width: 100%;
@@ -318,6 +321,10 @@ footer {
 @media (max-width: 1200px) {
   h1 {
     font-size: 4rem;
+  }
+
+  .add-item-form {
+    margin-bottom: 120px;
   }
 }
 
