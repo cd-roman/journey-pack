@@ -1,3 +1,7 @@
 export default function Logo() {
-  return <img src="https://bytegrad.com/course-assets/react-nextjs/dots.png" />;
+  return (
+    <span className="material-symbols-outlined travel-bag-icon">
+      travel_luggage_and_bags
+    </span>
+  );
 }
