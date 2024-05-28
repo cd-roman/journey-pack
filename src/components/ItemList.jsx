@@ -41,7 +41,7 @@ export default function ItemList() {
   );
 
   return (
-    <ul className="item-list">
+    <ul className="item-list" data-test="item-list">
       {items.length === 0 ? <EmptyView /> : null}
 
       {items.length > 0 ? (
@@ -81,7 +81,12 @@ function Item({ item, onDeleteItem, onToggleItem }) {
         {item.name}
       </label>
 
-      <button onClick={() => onDeleteItem(item.id)}>❌</button>
+      <button
+        onClick={() => onDeleteItem(item.id)}
+        data-test="remove-item-button"
+      >
+        ❌
+      </button>
     </li>
   );
 }

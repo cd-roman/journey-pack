@@ -25,6 +25,7 @@ export default function AddItemForm({ onAddItem }) {
       <input
         ref={inputRef}
         value={itemText}
+        data-test="new-item-input"
         onChange={(e) => {
           setItemText(e.target.value);
         }}
