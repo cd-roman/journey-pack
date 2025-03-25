@@ -277,6 +277,39 @@ form > input::placeholder {
   font-size: 13px;
 }
 
+
+.not-found {
+  width: 80%;
+  max-width: 980px;
+  height: 50vh;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  margin-top: 0;
+}
+
+.not-found .empty-state {
+  position: static;
+  transform: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.not-found .empty-state .btn {
+  max-width: 200px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   width: 80%;
   max-width: 980px;
